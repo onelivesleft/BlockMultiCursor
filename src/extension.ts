@@ -14,15 +14,15 @@ export function activate(context: vscode.ExtensionContext) {
 
   let blockMultiCursor = new BlockMultiCursor();
 
-  let growUp = vscode.commands.registerTextEditorCommand('extension.growUp', (editor: TextEditor, edit: TextEditorEdit) => {
+  let growUp = vscode.commands.registerTextEditorCommand('blockMultiCursor.growUp', (editor: TextEditor, edit: TextEditorEdit) => {
     blockMultiCursor.grow(UP, editor, edit);
   });
 
-  let growDown = vscode.commands.registerTextEditorCommand('extension.growDown', (editor: TextEditor, edit: TextEditorEdit) => {
+  let growDown = vscode.commands.registerTextEditorCommand('blockMultiCursor.growDown', (editor: TextEditor, edit: TextEditorEdit) => {
     blockMultiCursor.grow(DOWN, editor, edit);
   });
 
-  let grow = vscode.commands.registerTextEditorCommand('extension.grow', (editor: TextEditor, edit: TextEditorEdit) => {
+  let grow = vscode.commands.registerTextEditorCommand('blockMultiCursor.grow', (editor: TextEditor, edit: TextEditorEdit) => {
     blockMultiCursor.grow(BOTH, editor, edit);
   });
 

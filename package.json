@@ -2,7 +2,7 @@
     "name": "blockmulticursor",
     "displayName": "BlockMultiCursor",
     "description": "BlockMultiCursor allows adding multiple cursors simply",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "license": "MIT",
     "repository": {
         "type": "git",
@@ -16,41 +16,41 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.growUp",
-        "onCommand:extension.growDown",
-        "onCommand:extension.grow"
+        "onCommand:blockMultiCursor.growUp",
+        "onCommand:blockMultiCursor.growDown",
+        "onCommand:blockMultiCursor.grow"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.growUp",
+                "command": "blockMultiCursor.growUp",
                 "title": "BlockMultiCursor: Grow Up"
             },
             {
-                "command": "extension.growDown",
+                "command": "blockMultiCursor.growDown",
                 "title": "BlockMultiCursor: Grow Down"
             },
             {
-                "command": "extension.grow",
+                "command": "blockMultiCursor.grow",
                 "title": "BlockMultiCursor: Grow"
             }
         ],
         "keybindings": [
             {
-                "command": "extension.growUp",
+                "command": "blockMultiCursor.growUp",
                 "key": "ctrl+alt+shift+up",
                 "mac": "cmd+alt+shift+up",
                 "when": "editorTextFocus"
             },
             {
-                "command": "extension.growDown",
+                "command": "blockMultiCursor.growDown",
                 "key": "ctrl+alt+shift+down",
                 "mac": "cmd+alt+shift+down",
                 "when": "editorTextFocus"
             },
             {
-                "command": "extension.grow",
+                "command": "blockMultiCursor.grow",
                 "key": "ctrl+alt+shift+right",
                 "mac": "cmd+alt+shift+right",
                 "when": "editorTextFocus"
